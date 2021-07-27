@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    /* background-color: #e0e0e0; */
+    font-family: "Noto Sans TC", sans-serif;
+    display: flex;
+  }
+
+  .hide{
+    display: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  b{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  }
+  
+  .sideMenu {
+    position: relative;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    padding: 50px 0;
+  }
+  
+  .nav div {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .menuItem1:hover > span {
+    display: block;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+  }
+
+  .menuItem2:hover > span {
+    display: block;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+  }
+
+  .menuItem3:hover > span {
+    display: block;
+    border-top: 1px solid red;
+    /* border-bottom: 1px solid red; */
+  }
+
+  .nav li:hover > a {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .nav span {
+    display: none;
+    position: relative;
+    padding-left: 20px;
+  }
+
+  .nav span a{
+    font-size: 15px;
+  }
+
+  .nav span div{
+    display: none;
+  }
+
+  .nav a {
+    display: block;
+    color: #000;
+    padding: 20px 40px;
+    position: relative;
+    font-weight: 700;
+  }
+
+  .hr{
+      position: relative;
+      right: -15%;
+  }
+
+  .menu-a1 img{
+    height: 25px;
+    width: 25px ;
+    position: relative;
+    padding-top: 10%;
+    padding-left: 20%;
+  }
+
+  .menu-bottom a{
+    text-transform: uppercase;
+    opacity: .86;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 2;
+    color: #4a4a4a;
+  }
+
+
+  /* //////// */
+  .main{
+    /* flex-basis: 60%;  */
+    background:#fff;
+    height: 100vh;;
+  }
+
+  .main-dcp{
+    padding-top: 20px;
+    padding-right: 75px;
+  }
+
+  .main p{
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: left;
+    color: #000;
+    width: 80%;
+  }
+
+  .main img{
+      max-width: 300px;
+  }
+
+  .main-img{
+    display: flex;
+    /* flex-wrap: wrap; */
+  }
+
+  .grid-badge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    float: right;
+    width: 40px;
+    padding: 19px 7px;
+    border-radius: 30px;
+    position: absolute;
+    left: 18px;
+    bottom: 75px;
+    z-index: 999;                                                                                                                                                                                                                                                                
+  }
+
+  .headerBox{
+    min-height: 20px;
+    position: relative;
+    color: #2d2d2d;
+    line-height: 1.4em;
+    white-space: nowrap;
+    min-height: 20px;
+    position: relative;
+    font-size: 14px;
+  }
+
+  .mobile-div{
+      display: flex;
+      align-items: end;
+  }
+
+  .colour{
+    /* display: inline-block; */
+    color: gray;
+    font-size: 12px;
+    padding-top: 0.5%;
+    /* height: 12px; */
+  }
+
+  .priceSpan .currency{
+    color: #323232;
+    /* float: right; */
+    padding-right: 7.5%;
+    line-height: 1.25em;
+    display: inline-block;
+  }
+
+  .price{
+      font-size: 20px;
+      display: flex;
+      padding-left: 8%;
+  }
+  
+  .item-list{
+    border: 1px solid grey;
+  }
+
+  .more-btn{
+    padding: 5px;
+    background: #000;
+    color: #fff;
+    position: relative;
+    left: 35%;
+    top: 5%;
+    padding: 18px;
+  }
+
+  /* ////dropdownlist */
+  .dropbtn {
+    background-color: #e0e0e0;
+    color: #000;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+    position: relative;
+    /* left: 535%; */
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}

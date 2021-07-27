@@ -1,0 +1,166 @@
+// css reset
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #546377;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sideMenu {
+    position: relative;
+    width: 300px;
+    height: 100%;
+    background-color: #ff7575;
+    // border-right: 3px solid #d1d1d1;
+    display: flex;
+    // 讓元素的方向變成直排
+    flex-direction: column;
+    // 因為有 boxsizing 的關係，所以不會有 Y 軸 bar
+    padding: 50px 0;
+    // 產生陰影
+    box-shadow: 5px 0 5px rgba(#303c4d, 0.6);
+    // sideMenu 移到畫面外
+    transform: translateX(-100%);
+    // 動畫效果 3s
+    transition: 0.3s;
+
+    form {
+        // 讓 form 裡面的元素橫向排列
+        display: flex;
+        margin: 0 10px 50px;
+        border-radius: 100px;
+        border: 1px solid #fff;
+        input {
+            width: 85%;
+        }
+        button {
+            width: 15%;
+        }
+        input,
+        button {
+            border: none;
+            padding: 5px 10px;
+            background-color: transparent;
+            color: #fff;
+        }
+        input:focus,
+        button:focus {
+            //讓表單不要有 focus 效果
+            outline: none;
+        }
+    }
+    .side-menu-switch {
+        position: absolute;
+        height: 80px;
+        width: 40px;
+        background-color: #303c4d;
+        color: #ffffff;
+        // 突出 sideMenu 右邊
+        right: -40px;
+        top: 0;
+        bottom: 0;
+        // 垂直置中
+        margin: auto;
+        line-height: 80px;
+        text-align: center;
+        font-size: 30px;
+        border-radius: 0 10px 10px 0;
+    }
+}
+
+#sideMenuSwitch {
+    // 讓 input check 消失
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    // 當 checked 被點選時，sideMenu 回到畫面內
+    &:checked + .sideMenu {
+        transform: translateX(0);
+    }
+    // 箭頭轉向
+    &:checked + .sideMenu .side-menu-switch .fa-angle-right {
+        transform: scale(-1);
+    }
+}
+
+.nav {
+    li {
+        position: relative;
+        cursor: pointer;
+        // 從第二個 a::before 元素開始
+        & + li a::before {
+            // 使用偽元素呈現選項中間的分隔線，使用偽元素一定要使用 content:''，不然不會有效果
+            content: '';
+            //使用絕對定位方式編寫，因為 padding已設定左右 10px，所以左右邊要推擠 10px，然後使分隔線定位在 top:0px，固定在中間
+            position: absolute;
+            border-top: 1px solid #ffffff;
+            left: 10px;
+            right: 10px;
+            top: 0px;
+        }
+        &:hover {
+            // 顯示被選取層跟其下ㄧ層
+            > ul {
+                display: block;
+            } // 從第一層到下一層都有點選效果(li 跟 a)
+            > a {
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+            .fas {
+                //使文字回到原來的位置
+                margin-right: 0em;
+                //使圖示出現
+                transform: scale(1);
+            }
+        }
+        // 第二層選單
+        ul {
+            // 開始時隱藏
+            display: none;
+            position: absolute;
+            left: 100%;
+            width: 300px;
+            top: 20px;
+            background-color: #58c9b9;
+            box-shadow: 5px 5px 10px rgba(#303c4d, 0.6);
+        }
+    }
+
+    a {
+        display: block;
+        color: #fff;
+        padding: 20px 10px;
+        position: relative;
+        font-weight: 300;
+        .fas {
+            //用 margin 的特性往右拉負值，讓文字靠左對齊
+            margin-right: -1.1em;
+            //產生位移，使圖示消失
+            transform: scale(0);
+            transition: 0.3s;
+        }
+        // 選點後效果
+        &:hover {
+            // background-color: rgba(0, 0, 0, 0.4);
+            .fas {
+                //使文字回到原來的位置
+                margin-right: 0em;
+                //使圖示出現
+                transform: scale(1);
+            }
+        }
+    }
+}
