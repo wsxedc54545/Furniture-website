@@ -1,0 +1,277 @@
+body{
+background-color: grey;
+display: block;
+position: relative;
+}
+#content{
+background-color: white;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+margin: auto;
+max-width: 1280px;
+height: 100%;
+min-height: 100%;
+}
+
+#left{
+background-color: white;
+width: 295px;
+vertical-align: top;
+display: table-cell;
+}
+.right{
+/* width: calc(100%-295px); */
+
+display: table-cell;
+}
+.articlewrapper{
+width: 901px;
+display:block ;
+position: relative;
+margin-top: 42px;
+margin-left: 42px;
+margin-right: 42px;
+}
+.articletitle{
+margin-bottom: 4px;
+font-size: 45px;
+font-weight: 400;
+}
+.articlebox{
+display: block;
+font-size: 16px;
+text-align: left;
+position: relative;
+overflow: hidden;
+line-height: 1.63;
+z-index: 50;
+}
+
+.articlebox2{
+    max-height: 100px;
+    overflow: hidden;
+}
+
+.seemore{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 30px 0;
+    background-image: linear-gradient(to bottom, transparent, white);
+}
+#seemorea{
+    
+    color: black;
+    height: 70px;
+    line-height: 70px;
+    font-size: 18px;
+    font-weight: 800;
+    
+}
+.feature{
+max-width: 920px;
+height: 428px;
+display: block;
+margin-top: 42px;
+margin-left: 32px;
+margin-right: 32px;
+margin-bottom: 60px;
+position: relative;
+}
+/* .scaler{
+position: relative;
+padding: 46.52173913043478%;
+height: 428px;
+} */
+.container{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    }
+.fleft{
+position: absolute;
+left: 0px;
+width: calc(50% - 2px);
+height: 100%;
+display: block;
+}
+.top{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: calc(50% -  2px);
+    }
+    .bottom{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: calc(50% - 2px);
+    }
+.fright{
+position:absolute;
+right: 0px;
+width:calc(50% - 2px);
+height: 100%;
+
+}
+.picbox{
+overflow: hidden;
+width: 100%;
+height: 100%;
+position: relative;
+}
+.picbox img{
+position: absolute;
+transform: translate(-50%, -50%);
+top: 50%;
+width: 100%;
+left: 50%;
+}
+.pictitle{
+position: absolute;
+top: 10px;
+right: 38px;
+border: none;
+font-weight: 700;
+font-size: 18px;
+color: white;
+text-transform: uppercase;
+}
+.pictitle::after{
+    position: absolute;
+    bottom: -8px;
+    left: 10%;
+    right: 10%;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    content: "";
+    color: inherit;
+}
+.filterwrapper{
+    padding-left: 39px;
+    padding-right: 39px;
+    padding-top: 34px;
+    padding-bottom: 36px;
+}
+.filterbox{
+    float: right;
+   
+}
+.productwrapper{
+    margin-left: 32px;
+    margin-right: 32px;
+    max-width: 920px;
+    margin-bottom: 144px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+.productbox{
+   position: relative;
+   overflow: hidden;
+   display: block;
+   width: 100%;
+}
+.product{
+    width: calc(100%/3 - 1px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+
+}
+.productpic{
+    max-height: 174px;
+    height: auto;
+    max-width: 279px;
+    width: 100%;
+    
+}
+.productlist{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items: flex-end; */
+    width: 100%;
+    /* justify-content: space-between; */
+    list-style: none;
+
+
+}
+.canvas{
+    text-align: center;
+    overflow: hidden;
+    display: block;
+
+}
+
+.addtocart{
+position: absolute;
+top: 12px;
+left: 20px;
+background-color: black;
+width: 130px;
+height: 30px;
+color: white;
+text-align: center;
+font-size: 12px;
+line-height: 30px;
+}
+.price{
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+    font-size: 30px;
+    color: black;
+}
+a:link{
+    text-decoration: none;
+}
+.title{
+    color: black;
+}
+.color{
+    color: black;
+    font-size: 10px;
+    margin-top: 10px;
+}
+.profilepicbox{
+    width: 55%;
+    overflow: hidden;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 2%;
+    padding-right: 2%;
+    float: left;
+}
+.profilepicbox div{
+   width: 100%; 
+}
+.profilepicbox img{
+    width: 100%;
+}
+#section{
+    max-width: 1170px;
+    margin: auto;
+    padding-left: 55px;
+    padding-right: 55px;
+    position: relative;
+    display: flex;
+   
+}
+.back{
+    position: absolute;
+    top: 70px;
+    left: 50px;
+}
+.profilecontent{
+    
+}
