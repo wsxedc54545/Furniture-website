@@ -1,0 +1,352 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img{
+max-width: 100%;
+height: auto;
+}
+*, *::before, *::after{
+box-sizing: border-box;
+}
+/* above CSS RESET */
+body{
+  background-color: #E0E0E0;
+}
+
+.contanier{
+  margin: 0 auto;
+  background-color: #fff;
+}
+.top{
+  height: 40px;
+  background-color: red;
+}
+
+.nav{
+  height: 65px;
+  background-color: orange;
+}
+
+.content{
+  width: 88%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 60px 55px 20px 55px;
+}
+
+.leftside{
+  width: 55%;
+}
+.leftside .back a{
+  text-decoration: none;
+  color: #A0A0A0;
+  padding: 10px 0px 10px 0px;
+  display: inline-block;
+} 
+.leftside .productImg{
+  max-width: 440px;
+  height: 380px;
+  margin: 0 auto;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.leftside .productImg .productImgSwitch{
+  width: 200%;
+  height: 380px;
+  display: flex;
+}
+.leftside .productImg img{
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+}
+.leftside .productBtn{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.leftside .productBtn button{
+  width: 100px;
+  border: 1px solid #E0E0E0;
+  background-color: #fff;
+  margin-right: 2px;
+  
+}
+.leftside .productBtn button img{
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+}
+
+.rightside{
+  width: 40%;
+  color: #404040;
+}
+
+.rightside div p{
+  padding-top: 16px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.rightside .ProductName h1{
+  font-size: 52px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.rightside .ProductPrice p{
+  font-size: 36px;
+  line-height: 42px;
+}
+.rightside .addBtn input{
+  color: #fff;
+  background-color: #000;
+  padding: 10px 15px;
+  margin: 20px 0px 30px 0px;
+  border: none;
+  cursor: pointer;
+}
+.rightside .addBtn input:hover{
+  background-color: #909090;
+}
+.rightside .desc{
+  color: #909090;
+  width: 80%;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.productDetail{
+  margin-top: 50px;
+}
+.productDetail .DetailBtn{
+  margin-bottom: 10px;
+}
+
+.productDetail .DetailBtn button{
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.76;
+  color: #000;
+}
+.productDetail .DetailBtn .SpecBtn{
+  border-bottom: 2px solid #404040;
+}
+.productDetail .DetailBtn{
+  margin-bottom: 25px;
+}
+.SpecDetail{
+  display: flex;
+  justify-content: space-between;
+}
+.productDetail .SpecDetail .leftpart{
+  width: 47%;
+}
+.productDetail .SpecDetail .leftpart h4{
+  border-top: 1px solid #E0E0E0;
+  padding-top: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: 3px;
+  color: #000;
+}
+.productDetail .SpecDetail .leftpart p{
+  font-size: 14px;
+  line-height: 1.6;
+  color: gray;
+  margin-bottom: 12px;
+}
+.productDetail .SpecDetail .rightpart{
+  width: 45%;
+}
+.productDetail .SpecDetail .rightpart h4{
+  border-top: 1px solid #E0E0E0;
+  padding-top: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: 3px;
+  color: #000;
+}
+.productDetail .SpecDetail .rightpart p{
+  font-size: 14px;
+  line-height: 1.6;
+  color: gray;
+  margin-bottom: 12px;
+}
+.productDetail .MainDetail h4{
+  border-top: 1px solid #E0E0E0;
+  padding-top: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: 3px;
+  color: #000;
+}
+.productDetail .MainDetail p{
+  font-size: 14px;
+  line-height: 1.6;
+  color: gray;
+  margin-bottom: 12px;
+}
+
+.activeLeft{
+  margin-left: -100%;
+  transition-duration: 1s;
+}
+.activeRight{
+  margin-left: 0;
+  transition-duration: 1s;
+}
+.hide{
+  display: none;
+}
+.footer{
+  height: 567px;
+  background-color: navy;
+}
+
+@media(max-width: 1280px){
+  .content{
+    width: 100%;
+  }
+}
+
+@media(max-width: 1024px){
+  .content{
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .leftside{
+    width: 60%;
+  }
+  .rightside{
+    width: 38%;
+  }
+  .rightside .desc{
+    width: 85%;
+  }
+  .leftside .productImg{
+    max-width: 400px;
+    height: 345px;
+  }
+  .leftside .productImg .productImgSwitch{
+    height: 345px;
+  }
+  .leftside .productImg img{
+    max-width: 400px;
+    height: 345px;
+  }
+}
+
+@media(max-width: 768px){
+  .content{
+    flex-direction: column;
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+  .rightside ,.leftside{
+    margin: 0 auto;
+    width: 100%;
+  }
+  .rightside{
+    padding-left: 30px;
+    padding-top: 50px;
+  }
+  .rightside .desc{
+    width: 90%;
+  }
+}
+
+@media(max-width: 500px){
+  .content{
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .rightside{
+    padding-left: 10px;
+  }
+  .SpecDetail{
+    flex-direction: column;
+  }
+  .productDetail .SpecDetail .rightpart, .productDetail .SpecDetail .leftpart{
+    width: 100%;
+  }
+}
+
+@media(max-width: 441px){
+  .leftside .productImg{
+    max-width: 380px;
+    height: 328px;
+  }
+  .leftside .productImg .productImgSwitch{
+    height: 328px;
+  }
+  .leftside .productImg img{
+    max-width: 380px;
+    height: 328px;
+  }
+}
+
+@media(max-width: 375px){
+  .leftside .productImg{
+    max-width: 325px;
+    height: 280px;
+  }
+  .leftside .productImg .productImgSwitch{
+    height: 280px;
+  }
+  .leftside .productImg img{
+    max-width: 325px;
+    height: 280px;
+  }
+}

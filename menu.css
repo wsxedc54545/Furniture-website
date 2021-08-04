@@ -1,0 +1,255 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img{
+max-width: 100%;
+height: auto;
+}
+*, *::before, *::after{
+box-sizing: border-box;
+}
+/* above CSS RESET */
+#more{
+  display: none;
+}
+.border-gray{
+  border: 1px solid #E0E0E0;
+}
+.border-gray:hover{
+  border: 1px solid #2d2d2d;
+}
+body{
+  background-color: #E0E0E0;
+}
+.contanier{
+  margin: 0 auto;
+  background-color: #fff;
+}
+.top{
+  height: 40px;
+  background-color: red;
+}
+
+.nav{
+  height: 65px;
+  background-color: orange;
+}
+
+.content{
+  width: 88%;
+  display: flex;
+}
+
+.leftside{
+  width: 23%;
+  background-color: pink;
+}
+
+.rightside{
+  width: 77%;
+}
+.rightside .rightDesc {
+  margin: 42px 42px 0;
+  padding: 0 0 45px;
+}
+.rightside .rightDesc h1{
+  font-size: 45px;
+  margin-bottom: 4px;
+  color: #000;
+}
+.rightside .rightDesc p{
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: left;
+  color: #000;
+}
+.rightside .rightDesc input{
+  border: none;
+  background-color: #fff;
+  margin-top: 10px;
+  margin-left: -6px;
+  color: gray;
+  cursor: pointer;
+}
+.rightside .rightImg{
+  max-width: 920px;
+  margin: 0px 42px 30px 42px; /* 上右下左 */
+}
+.rightImg .imgbanner{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 60px;
+}
+.rightImg .imgbanner img{
+  max-width: 48%;
+}
+.rightImg .productList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.rightImg .productList .product{
+  position: relative;
+}
+.rightImg .productList .product:hover input{
+  display: block;
+}
+.rightImg .productList .product input{
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  color: #fff;
+  background-color: #000;
+  padding: 5px;
+  border: 1px solid #000;
+  cursor: pointer;
+  display: none;
+}
+.rightImg .productList .product input:hover{
+  background-color: #909090;
+  border: 1px solid #909090;
+}
+.rightImg .productList li{
+  max-width: 32%;
+  margin-bottom: 10px;
+}
+.rightImg .productList a{
+  text-decoration: none;
+}
+.rightImg .productList .productText{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:5px 5px 5px 5px;
+}
+.rightImg .productList .productText .productName {
+  font-size: 12px;
+  line-height: 1.4em;
+}
+.rightImg .productList .productText .productName h2{
+  color: #2d2d2d;
+  margin-bottom: 3px;
+}
+.rightImg .productList .productText .productName p{
+  color: gray;
+}
+.rightImg .productList .productText .productPrice{
+  font-size: 16px;
+  color: #323232;
+}
+.rightside .moreResults{
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px 40px 0px;
+}
+.rightside .moreResults input{
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  padding: 20px 60px 20px 60px;
+}
+.rightside .moreResults input:hover{
+  background-color: gray;
+}
+
+.footer{
+  height: 567px;
+  background-color: navy;
+}
+
+@media(max-width: 1280px){
+  .content{
+    width: 100%;
+  }
+}
+
+@media(max-width: 1024px){
+  .leftside{
+    display: none;
+  }
+  .rightside{
+    width: 100%;
+  }
+  .rightside .rightImg .imgbanner{
+    display: none;
+  }
+  .rightImg .productList .product:hover input{
+    display: none;
+  }
+}
+
+@media(max-width: 768px){
+  .rightImg .productList li{
+    max-width: 48%;
+  }
+  .rightImg .productList .productText{
+    padding:5px 20px 5px 20px;
+  }
+  .rightside .rightImg{
+    margin: 0px;
+  }
+}
+
+@media(max-width: 600px){
+  .rightImg .productList .productText .productPrice{
+    font-size: 12px;
+  }
+  .rightImg .productList .productText{
+    padding:5px 5px 5px 5px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .rightImg .productList .productText .productPrice{
+    margin-top: 5px;
+  }
+}
+
+@media(max-width: 375px){
+  
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lamps_index</title>
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+  <div class="top"></div>
+  <div class="nav"></div>
+  <div class="content contanier">
+    <div class="leftside"></div>
+    <div class="rightside">
+      <div class="rightDesc">
+        <h1>Lamps</h1>
+        <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit expedita tenetur autem tempore porro voluptatum laudantium veritatis a beatae sed odit quisquam dolor at animi excepturi, esse commodi ducimus harum.
+        <br>Quibusdam est beatae nobis, mollitia magnam incidunt voluptatum id magni aspernatur possimus pariatur dolore <span id="more">rerum. Laudantium, minima, possimus non omnis accusamus inventore voluptate quia, molestias placeat eius alias ut expedita?
+        <br>Accusantium dolor, qui vel sed dolore eligendi reprehenderit expedita temporibus aspernatur labore, blanditiis quisquam molestias error ut ratione exercitationem. Tempore ullam fuga odit accusantium, illo nisi nihil harum omnis praesentium.
+        <br>Iure tempora quod est fugit illum debitis sit delectus, optio assumenda nemo, maiores voluptas in a possimus itaque placeat at reprehenderit corporis quibusdam doloribus error odit voluptatibus provident? Quas, ipsam?
+        </span>
+        </p>
+        <input type="button" value="Read more ▼" onclick="readMoreLess()" id="readBtn">
+      </div>
+      <div class="rightImg">
+        <div class="imgbanner">
+          <img src="imgs/floorlamp_1.jpg" alt="floorlamp">
+          <img src="imgs/tablelamp_1.jpg" alt="tablelamp">
+        </div>
+        <ul class="productList">
+          <li class="product_1 border-gray">
+              <div class="product">
+                <input class="hide1" type="button" value="+Add to shoppoing bag">
+                <a href="#">
+                  <img src="imgs/ceilinglamp_1.jpg" alt="ceilinglamp">
+                </a>
+              </div>
+              <a href="#">
+              <div class="productText">
+                <div class="productName">
+                  <h2>Geometric Ceiling Lamp</h2>
+                  <p>More Details</p>
+                </div>
+                <div class="productPrice">
+                  <p>30 USD</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="product_2 border-gray">
+            <div class="product">
+              <input class="hide2" type="button" value="+Add to shoppoing bag">
+              <a href="#">
+                <img src="imgs/ceilinglamp_2.jpg" alt="ceilinglamp">
+              </a>
+            </div>
+            <a href="#">
+              <div class="productText">
+                <div class="productName">
+                  <h2>Cap Ceiling Lamp</h2>
+                  <p>More Details</p>
+                </div>
+                <div class="productPrice">
+                  <p>25 USD</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="product_3 border-gray">
+            <div class="product">
+              <input type="button" value="+Add to shoppoing bag">
+              <a href="#">
+                <img src="imgs/floorlamp_1.jpg" alt="floorlamp">
+              </a>
+            </div>
+            <a href="#">
+              <div class="productText">
+                <div class="productName">
+                  <h2>Human Face Floor Lamp</h2>
+                  <p>More Details</p>
+                </div>
+                <div class="productPrice">
+                  <p>45 USD</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="product_4 border-gray">
+            <div class="product">
+              <input type="button" value="+Add to shoppoing bag">
+              <a href="#">
+                <img src="imgs/floorlamp_2.jpg" alt="floorlamp">
+              </a>
+            </div>
+            <a href="#">
+              <div class="productText">
+                <div class="productName">
+                  <h2>Cap Floor Lamp</h2>
+                  <p>More Details</p>
+                </div>
+                <div class="productPrice">
+                  <p>40 USD</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="product_5 border-gray">
+            <div class="product">
+              <input type="button" value="+Add to shoppoing bag">
+              <a href="#">
+                <img src="imgs/tablelamp_1.jpg" alt="tablelamp">
+              </a>
+            </div>
+            <a href="#">
+              <div class="productText">
+                <div class="productName">
+                  <h2>Pineapple Table Lamp</h2>
+                  <p>More Details</p>
+                </div>
+                <div class="productPrice">
+                  <p>28 USD</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="product_6 border-gray">
+            <div class="product">
+              <input type="button" value="+Add to shoppoing bag">
+              <a href="#">
+                <img src="imgs/walllamp_1.jpg" alt="walllamp">
+              </a>
+            </div>
+            <a href="#">
+              <div class="productText">
+                <div class="productName">
+                  <h2>Cap Wall Lamp</h2>
+                  <p>More Details</p>
+                </div>
+                <div class="productPrice">
+                  <p>35 USD</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="moreResults">
+        <input type="button" value="More results">
+      </div>
+    </div>
+  </div>
+  <div class="footer"></div>
+  <script>
+    function readMoreLess() {
+      let moreText = document.querySelector("#more");
+      let btnText = document.querySelector("#readBtn");
+    
+      if (btnText.value === "Read more ▼") {
+        btnText.value = "Read less ▲"; 
+        moreText.style.display = "inline";
+      } else{
+        btnText.value = "Read more ▼"; 
+        moreText.style.display = "none";
+      }
+    }
+
+
+    </script>
+</body>
+</html>
