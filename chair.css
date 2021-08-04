@@ -20,13 +20,9 @@ width: 295px;
 vertical-align: top;
 display: table-cell;
 }
-.right{
-/* width: calc(100%-295px); */
 
-display: table-cell;
-}
 .articlewrapper{
-width: 901px;
+max-width: 901px;
 display:block ;
 position: relative;
 margin-top: 42px;
@@ -46,6 +42,9 @@ position: relative;
 overflow: hidden;
 line-height: 1.63;
 z-index: 50;
+}
+.article{
+    text-align: justify;
 }
 
 .articlebox2{
@@ -164,8 +163,7 @@ text-transform: uppercase;
    
 }
 .productwrapper{
-    margin-left: 32px;
-    margin-right: 32px;
+   margin: auto;
     max-width: 920px;
     margin-bottom: 144px;
     position: relative;
@@ -177,21 +175,23 @@ text-transform: uppercase;
    overflow: hidden;
    display: block;
    width: 100%;
+  
 }
 .product{
-    width: calc(100%/3 - 1px);
+    width: calc(100%/3 - 20px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-bottom: 10px;
+    margin: 10px;
+   
 
 }
 .productpic{
     max-height: 174px;
     height: auto;
-    max-width: 279px;
+    
     width: 100%;
     
 }
@@ -210,7 +210,11 @@ text-transform: uppercase;
     text-align: center;
     overflow: hidden;
     display: block;
+    position: relative;
 
+}
+.productblock{
+    width: 100%;
 }
 
 .addtocart{
@@ -272,6 +276,81 @@ a:link{
     top: 70px;
     left: 50px;
 }
-.profilecontent{
-    
+
+.lottery{
+    height: 130px;
+    width: 50px;
+    font-size: 18px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    position: fixed;
+    right: 0;
+    top: 70%;
+    background-color: black;
+    color: white;
+    writing-mode: vertical-rl;
+    text-align: center;
+    line-height: 50px;
 }
+@media screen and (max-width: 767px) {
+    #right{
+        width: 100vw;
+        display: block;
+        
+    }
+.articlewrapper{
+width: 85vw;
+display:block ;
+position: relative;
+margin-top: 42px;
+margin: auto;
+
+}
+.productwrapper{
+    width: 100%;
+}
+#left{
+    display: none;
+
+}
+.feature{
+    display: none;
+}
+.filterwrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product{
+    width: calc(100%/2 - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 10px;
+
+
+}
+.productblock{
+    width: 100%;
+   
+}
+.lottery{
+    height: 130px;
+    width: 50px;
+    font-size: 18px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    position: fixed;
+    right: 0;
+    top: 70%;
+    background-color: black;
+    color: white;
+    writing-mode: vertical-rl;
+    text-align: center;
+    line-height: 50px;
+    z-index: 3;
+}
+
+};
