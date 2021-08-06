@@ -1,0 +1,88 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.shopbagbox{
+    display: flex;
+    align-items: center;
+    width: 360px;
+    background-color: #E1E1E1;
+    position: relative;
+}
+.checkoutarea{
+    width: 290px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 35px 10px 35px;
+    background-color: #F2F2F2;
+   
+}
+
+.subtotal{
+    width: 290px;
+    padding: 10px 35px 10px 35px;
+    border-bottom: 1px solid #dedede ;
+    background-color: #F2F2F2;
+}
+.totalline{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.shopbag{
+    padding: 25px 35px 25px 35px;
+    width: 290px;
+    background-color: #F2F2F2;
+    font-size: 18px;
+}
+
+.shopbagout{
+    padding: 10px 25px 10px 25px;
+    display: flex;
+    width: 310px;
+    flex-direction: column;
+    background-color:#F2F2F2 ;
+}
+.shopbagproduct{
+    padding: 10px;
+    position: relative;
+    background-color: white;
+}
+.checkoutbutton{
+    background-color: black;
+    color: white;
+    padding: 15px 60px;
+    margin: 15px 0px;
+    text-decoration: none;
+}
+
+.shipping{
+    margin: 20px 0px;
+    text-decoration: underline;
+}
+
+.shopbagname{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.shopbagprice{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.closetag{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+.position{
+    position: relative;
+}
+.creditcard{
+    margin-bottom: 20px;
+}
